@@ -1,36 +1,31 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# dencity
 
-## Getting Started
+*Names and Roles:*
+- **Mason Green** - Product Manager
+- **Anumita Ghosh** - Front-End Developer
+- **Ethan Wang** - Data Science
+- **Lexi He** - UX/UI Designer
+- **Ty Okazaki** - Back-End Developer
 
-First, run the development server:
+**Project Description:**
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Develop a web application to inform and encourage middle-housing development in response to WA House Bill 1110 (2023), which mandates the expansion of such developments in urban centers. This project seeks to give homeowners access to integral information on development opportunities and policy incentives in an intuitive data dashboard. By leveraging GIS and data visualizations, this project offers a comprehensive solution facilitating informed decision-making and fostering urban development.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+**Summary of Concerns:**
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+*Technical Challenges*
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+The integration of GIS with dynamic data visualizations requires a comprehensive understanding of geospatial data and database design. Displaying this on a website while maintaining efficient runtime will require considerable thought, most likely requiring us to write dynamic API queries for a database. Additionally, building out a fully-fledged application requires a granular understanding of housing codes and ordinances, which are notoriously difficult to understand. These two challenges may result in the team having to choose one feature over another, depending on circumstance.
 
-## Learn More
+*Skills Gaps*
 
-To learn more about Next.js, take a look at the following resources:
+Developing knowledge of housing codes and various middle housing designs, such as those commercially available from Missing Middle Housing. Understanding the financial incentives and costs surrounding re-development to better understand users.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+*Resource Constraints*
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+The dataset provided by the Puget Sound Regional Council is an amalgamation of various datasets used to inform policymakers and developers about middle housing initiatives. Understanding where this dataset came from, how more updated data can be obtained, and what each variable represents are a challenge, and restraint.
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+*Resources*
+- [King County Data Hub](https://kingcounty.gov/legacy/services/gis/GISData.aspx)
+- [Parcels for King County with Addresses](https://gis-kingcounty.opendata.arcgis.com/datasets/kingcounty::parcels-for-king-county-with-address-with-property-information-parcel-address-area/about)
+- [King County Tax Parcel Centroids with select City of Seattle geographic overlays](https://data-seattlecitygis.opendata.arcgis.com/datasets/SeattleCityGIS::king-county-tax-parcel-centroids-with-select-city-of-seattle-geographic-overlays/about)

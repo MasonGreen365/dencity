@@ -30,6 +30,12 @@ CREATE TABLE PROPERTY (
     PropertyAddress VARCHAR(255),
     PropertyLatitude DECIMAL,
     PropertyLongitude DECIMAL,
+    PropertyCityTier INT,
+    PropertyInHCT INT,
+    PropertyResZone INT,
+    PropertyMixedZone INT,
+    PropertyDUCap DECIMAL,
+    PropertyVacant BOOLEAN,
     PropertySize INT,
     PropertyValuation DECIMAL,
     MiddleHousingEligible BOOLEAN

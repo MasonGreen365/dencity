@@ -17,6 +17,34 @@
             <li><a href="/contact"><i class="fas fa-envelope"></i> Contact</a></li>
         </ul>
     </div>
-    resources
+    <div class="resources-container">
+        <div class="housing-plans">
+            <h2>Housing Plans</h2>
+            <div class="housing-grid">
+                <div class="housing-card">
+                    <h3>Townhouse</h3>
+                    <img src="{{ url_for('static', filename='img/plan.png') }}" alt="Townhouse">
+                    <p>Price: $200,000</p>
+                    <p>Units: 50</p>
+                </div>
+                <div class="housing-card">
+                    <h3>Duplex</h3>
+                    <img src="{{ url_for('static', filename='img/plan.png') }}" alt="Duplex">
+                    <p>Price: $250,000</p>
+                    <p>Units: 30</p>
+                </div>
+                <div class="housing-card">
+                    <h3>Triplex</h3>
+                    <img src="{{ url_for('static', filename='img/plan.png') }}" alt="Triplex">
+                    <p>Price: $300,000</p>
+                    <p>Units: 20</p>
+                </div>
+            </div>
+        </div>
+        <div class="data-sources">
+            <h2>Data Sources</h2>
+            <p>List of data sources used in the project.</p>
+        </div>
+    </div>
 </body>
 </html>

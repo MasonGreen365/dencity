@@ -17,6 +17,66 @@
             <li><a href="/contact"><i class="fas fa-envelope"></i> Contact</a></li>
         </ul>
     </div>
-    contact
+    <div class="contact-container">
+        <div class="contact-form">
+            <h2>Contact Us</h2>
+            <p>Have a question or need assistance? Please send us a message!</p>
+            <form>
+                <label for="name">Your Name</label>
+                <input type="text" id="name" name="name" required>
+                
+                <label for="email">Your Email</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="category">Select a Category</label>
+                <select id="category" name="category">
+                    <option value="general">General Inquiry</option>
+                    <option value="support">Technical Support</option>
+                    <option value="feedback">Feedback</option>
+                </select>
+                
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+                
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required></textarea>
+                
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <div class="team">
+            <h2>The Team</h2>
+            <div class="team-grid">
+                <div class="team-member">
+                    <a href="https://www.linkedin.com/in/masonlgreen/">
+                        <img src="{{ url_for('static', filename='img/profile1.jpg') }}" alt="Mason Green Profile">
+                    </a>
+                    <h3>Mason Green</h3>
+                    <p>Project Manager</p>
+                </div>
+                <div class="team-member">
+                    <a href="https://www.linkedin.com/in/anumita-ghosh-72b0941a8/">
+                        <img src="{{ url_for('static', filename='img/profile2.jpg') }}" alt="Anumita Ghosh Profile">
+                    </a>
+                    <h3>Anumita Ghosh</h3>
+                    <p>Front-End Developer</p>
+                </div>
+                <div class="team-member">
+                    <a href="https://www.linkedin.com/in/etzwang/">
+                        <img src="{{ url_for('static', filename='img/profile3.jpg') }}" alt="Ethan Wang Profile">
+                    </a>
+                    <h3>Ethan Wang</h3>
+                    <p>Data Scientist</p>
+                </div>
+                <div class="team-member">
+                    <a href="https://www.linkedin.com/in/tyokazaki/">
+                        <img src="{{ url_for('static', filename='img/profile4.jpg') }}" alt="Ty Okazaki Profile">
+                    </a>
+                    <h3>Ty Okazaki</h3>
+                    <p>Full-Stack Developer</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

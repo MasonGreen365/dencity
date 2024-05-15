@@ -28,12 +28,12 @@ body {
 	align-items:center;
 	background-color:var(--moss);
 	font-size:1.1rem;
-	padding:20px 40px;
+	padding:10px 50px;
 	box-shadow:0 4px 8px rgba(0,0,0,0.15);
 	z-index:9999;
 }
 .header img {
-	height:50px;
+	height:60px;
 }
 .navigation {
 	list-style-type:none;
@@ -42,7 +42,7 @@ body {
 }
 .navigation li {
 	display:inline;
-	margin-right:40px;
+	margin-right:50px;
 }
 .navigation a {
 	text-decoration:none;
@@ -52,6 +52,9 @@ body {
 }
 .navigation a:hover {
 	color:var(--olive);
+}
+.navigation i {
+	margin-right: 2px;
 }
 .container {
 	width:80%;

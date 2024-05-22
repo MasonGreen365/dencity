@@ -2,6 +2,7 @@
 :root {
     --black:#0a0a0a;
 	--white:#ffffff;
+    --darker-white:#fbfbfb;
     --darkgray:#1f1f1f;
 	--clay:#cb997e;
 	--pale:#ddbea9;
@@ -109,7 +110,7 @@ body {
 
 .hero-text h1 {
     font-size: 3.2rem;
-    color: var(--army);
+    color: var(--rainforest);
 }
 
 .hero-text p {
@@ -131,19 +132,73 @@ body {
 .section-content {
     padding: 50px;
     text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.content-container {
+    display: flex;
+    align-items: center;
 }
 
-.section-content h2 {
-    font-size: 2rem;
-    color: var(--army);
+.image-wrapper,
+.text-wrapper {
+    flex: 1;
+    box-sizing: border-box;
+}
+
+.tenant-image,
+.landlord-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.tenant-image,
+.landlord-image,
+.text {
+    display: none;
+}
+
+.tenant-image.active,
+.landlord-image.active,
+.text.active {
+    display: block;
+}
+
+.button-container {
+    text-align: center;
     margin-bottom: 20px;
+    background-color: var(--peach);
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    box-shadow:0 2px 4px rgba(0,0,0,0.2);
+}
+.toggle-button {
+    padding: 10px 20px;
+    background-color: transparent;
+    border:none;
+    color: var(--grass);
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: background-color 0.3s, color 0.3s;
 }
 
-.section-content p {
-    font-size: 1.1rem;
-    color: var(--grass);
-    line-height: 1.6;
+.toggle-button:hover {
+    background-color: var(--ivory);
 }
+
+.toggle-button.active {
+    background-color: var(--white);
+    color: var(--rainforest);
+    border: 1px solid #EDECF5;
+    font-weight: bold;
+}
+
+
 /* PROPERTIES */
 .map-container {
 	width:90%;
@@ -183,7 +238,7 @@ body {
     border-radius: 20px;
 }
 .team {
-    background-color: var(--ivory);
+    background-color: var(--white);
     padding: 30px 50px;
     border-radius: 15px;
     width: 90%;
@@ -191,12 +246,12 @@ body {
 }
 .team h2 {
     font-size: 2rem;
-    color: var(--grass);
+    color: var(--rainforest);
     margin-left: 12px;
 }
 .team p {
     font-size: 1.2rem;
-    color: var(--moss);
+    color: var(--grass);
     margin-left: 12px;
 }
 .team-grid {
@@ -209,7 +264,7 @@ body {
     background-color: var(--white);
     margin: 12px;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     width: calc(25% - 40px);
     box-sizing: border-box;
@@ -218,16 +273,16 @@ body {
     max-width: 80%;
     display: block;
     margin: 0 auto;
-    border-radius: 30px;
+    border-radius: 40px;
 }
 .team-member h3 {
     font-size: 1.3rem;
-    color: var(--grass);
+    color: var(--rainforest);
     margin-top: 20px;
 }
 .team-member p {
     font-size: 1rem;
-    color: var(--moss);
+    color: var(--grass);
     margin: 20px 0;
 }
 .team-member p.role {
@@ -240,12 +295,12 @@ body {
 }
 .links a {
     margin: 10px 25px 0 0px;
-    color: var(--grass);
+    color: var(--moss);
     text-decoration: none;
     transition: color 0.3s ease;
 }
 .links a:hover {
-    color: var(--moss);
+    color: var(--sage);
 }
 .links a i {
     font-size: 18px;

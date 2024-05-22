@@ -8,16 +8,22 @@ def get_db_connection():
     conn = psycopg2.connect(host='localhost', database='dencity', user='postgres', password='password')
     return conn
 
-# Route for Index
+# Route for Landing
 @app.route('/')
-def index():
+def landing():
+    return render_template('landing.html')
+
+
+# Route for Properties
+@app.route('/properties')
+def properties():
     conn = get_db_connection()
     cur = conn.cursor()
     cur.execute('SELECT propertyid, propertylatitude, propertylongitude, propertyaddress FROM PROPERTY;')
     properties = cur.fetchall()
     cur.close()
     conn.close()
-    return render_template('index.html', properties=properties)
+    return render_template('properties.html', properties=properties)
 
 # Route for About
 @app.route('/about')

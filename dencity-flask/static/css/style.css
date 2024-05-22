@@ -188,13 +188,13 @@ body {
 }
 
 .toggle-button:hover {
-    background-color: var(--ivory);
+    background-color: var(--darker-white);
 }
 
 .toggle-button.active {
-    background-color: var(--peach);
+    background-color: var(--ivory);
     color: var(--rainforest);
-    border: 1px solid #EDECF5;
+    border: 1px solid var(--darker-white);
     font-weight: bold;
 }
 

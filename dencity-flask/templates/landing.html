@@ -5,10 +5,11 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="icon" href="{{ url_for('static', filename='img/favicon.ico') }}" type="image/x-icon"/>
 </head>
 <body>
     <div class="header">
-        <a href="/" class="logo">Dencity</a>
+        <a href="/" class="logo" style="color:#0E8561">Dencity</a>
         <ul class="navigation">
             <li><a href="/properties">Properties</a></li>
             <li><a href="/about">About</a></li>
@@ -25,6 +26,9 @@
         </div>
         <div class="hero-images">
             <img src="{{ url_for('static', filename='img/hero.jpg') }}" alt="Hero Section Image">
+            <div class="scroll-down">
+                <i class="fas fa-chevron-down"></i>
+            </div>
         </div>
     </section>
     <section class="tenants-landlords">
@@ -40,21 +44,61 @@
                         <button class="toggle-button landlord-button" onclick="toggleContent('landlord')">For Landlords</button>
                     </div>
                     <div class="text tenants active">
-                        <h2>For Tenants</h2>
-                        <p>1Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus commodo mi in odio tincidunt, vitae tristique velit varius.</p>
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                     <div class="text landlords">
-                        <h2>For Landlords</h2>
-                        <p>2Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus commodo mi in odio tincidunt, vitae tristique velit varius.</p>
+                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
                     </div>
                 </div>
             </div>
         </div>
+    </section>  
+    <section class="key-statistics">
+        <div class="section-content">
+            <div class="statistic-wrapper">
+                <div class="statistic">
+                    <h3>Statistic 1</h3>
+                    <p>Either database or general middle housing statistics</p>
+                </div>
+                <div class="statistic">
+                    <h3>Statistic 2</h3>
+                    <p>Either database or general middle housing statistics</p>
+                </div>
+                <div class="statistic">
+                    <h3>Statistic 3</h3>
+                    <p>Either database or general middle housing statistics</p>
+                </div>
+            </div>
+        </div>
+    </section>  
+    <section class="infographic-section">
+        <img src="{{ url_for('static', filename='img/infographic.jpg') }}" alt="Middle Housing Infographic">
     </section>
+    <section class="video-demo">
+        <div class="video-container">
+            <div class="video-text">
+                <h2>Video Demo</h2>
+                <p>This is a video demonstration of our product.</p>
+            </div>
+            <video controls class="demo-video" height="450">
+                <source src="{{ url_for('static', filename='demo/demo-video.mp4') }}" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </section>    
     <footer class="footer">
         <div class="footer-content">
+            <a href="/">Landing</a>
+            <a href="/properties">Properties</a>
+            <a href="/about">About</a>
+            <a href="/resources">Resources</a>
+            <a href="/contact">Contact</a>
+        </div>
+        <div class="legal-info">
             <p><strong>&copy; 2024 Dencity. All rights reserved.</strong></p>
-            <p>Legal Disclaimer: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua..</p>
+            <p>Legal Disclaimer: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </div>
     </footer>
     <script src="{{ url_for('static', filename='js/landing.js') }}"></script>

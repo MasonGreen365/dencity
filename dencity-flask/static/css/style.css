@@ -594,7 +594,7 @@ body {
 .contact-form button {
     margin-top: 20px;
     padding: 15px;
-    background-color: var(--moss);
+    background-color: var(--rainforest);
     color: var(--white);
     border: none;
     border-radius: 5px;
@@ -604,5 +604,5 @@ body {
 
 
 .contact-form button:hover {
-    background-color: var(--sage);
+    background-color: #239270;
 }

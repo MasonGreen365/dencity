@@ -4,8 +4,7 @@
 - **Mason Green** - Product Manager
 - **Anumita Ghosh** - Front-End Developer
 - **Ethan Wang** - Data Science
-- **Lexi He** - UX/UI Designer
-- **Ty Okazaki** - Back-End Developer
+- **Ty Okazaki** - Full-Stack Developer
 
 **Project Description:**
 

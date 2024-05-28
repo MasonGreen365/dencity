@@ -163,6 +163,28 @@ body {
     flex: 1;
     box-sizing: border-box;
 }
+
+/* animation when toggled */
+.image-wrapper {
+    position: relative;
+    width: 200px; 
+    height: 300px;
+}
+
+.image-wrapper img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+.image-wrapper img.active {
+    opacity: 1;
+}
+
 .text-wrapper {
     padding-left: 10px;
 }
@@ -195,6 +217,31 @@ body {
     justify-content: center;
     text-align: center;
 }
+
+/* statistic animation & flip behavior */
+@keyframes slideInFromRight {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+.statistic {
+    opacity: 0;
+    perspective: 1000px; 
+    transform: translateX(100%);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.statistic.animate {
+    animation: slideInFromRight 1s ease forwards;
+}
+
+/* statistic card styling */
 .statistic {
     margin: auto 20px;
     background-color: var(--darker-white);
@@ -210,8 +257,8 @@ body {
     color: var(--grass);
 }
 .infographic-section {
-    padding: 50px;
-    margin-top: 50px;
+    padding: 20px;
+    margin-top: .25rem;
 }
 .infographic-section img {
     max-width: 100%;
@@ -273,6 +320,34 @@ body {
 .demo-video {
     border-radius: 20px;
     overflow: hidden;
+}
+
+.centered-content {
+    display: flex;
+    margin-bottom: .5rem;
+    justify-content: center;
+}
+.text-wrapper {
+    flex: 1;
+}
+.text-button-wrapper {
+    display: flex;
+    align-items: center;
+}
+.button-wrapper {
+    margin-left: 20px;
+}
+
+.explore-button {
+    padding: 10px 20px;
+    font-size: 1.5rem;
+    background-color: var(--rainforest);
+    color: var(--white);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+
 }
 /* PROPERTIES */
 .map-container {

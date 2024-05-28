@@ -19,10 +19,8 @@
     </div>
     <section class="hero">
         <div class="hero-text">
-            <h1>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
+            <h1>Meet Dencity. <br> Middle Housing <br> <span>Made Easy</span></h1>
+            <p>With Dencity, middle housing planning and development has never been easier. Using up-to-date Regional Housing and Geographic information, Dencity matches pre-approved plans with your sites requirements, and enables rapid ideation of ideas.</p>
         </div>
         <div class="hero-images">
             <img src="{{ url_for('static', filename='img/hero.jpg') }}" alt="Hero Section Image">
@@ -40,16 +38,16 @@
                 </div>
                 <div class="text-wrapper">
                     <div class="button-container">
-                        <button class="toggle-button tenant-button active" onclick="toggleContent('tenant')">For Tenants</button>
-                        <button class="toggle-button landlord-button" onclick="toggleContent('landlord')">For Landlords</button>
+                        <button class="toggle-button tenant-button active" onclick="toggleContent('tenant')">For Owners</button>
+                        <button class="toggle-button landlord-button" onclick="toggleContent('landlord')">For Developers</button>
                     </div>
                     <div class="text tenants active">
-                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <h2>Use Dencity to Tailor the Perfect Solution in Minutes</h2>
+                        <p>Whether you currently own a home or are planning to, Dencity is a intuitive tool that enables you to explore development options as an independent actor. Expanding upon frameworks established with <a href="https://aduniverse-seattlecitygis.hub.arcgis.com/">ADUniverse</a>, a portal built by the Seattle Office of Planning and Community Development and Department of Construction, Dencity expands the scope of ready-made housing plans to encourage development.</p>
                     </div>
                     <div class="text landlords">
-                        <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h2>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <h2>Build with Confidence, and Rapidly Ideate Project Ideas</h2>
+                        <p>Dencity is built with Developers in mind, housing up-to-date housing ordinance and planning policies in both Seattle and greater King County. Utilize Dencity to scope out potential developments, and identify high yeild locations. If you're looking to get your housing plan approved by the Seattle Department of Construction and Inspections, Dencity will help make it happen.</p>
                     </div>
                 </div>
             </div>
@@ -59,22 +57,46 @@
         <div class="section-content">
             <div class="statistic-wrapper">
                 <div class="statistic">
-                    <h3>Statistic 1</h3>
-                    <p>Either database or general middle housing statistics</p>
+                    <div class="tenants active">
+                        <img src="{{ url_for('static', filename='img/isometric-idea-for-business-success-and-project-management.gif') }}" alt="Statistic 1" style="width: 200px; height: 200px;">
+                        <h3>Rapid Ideation</h3>
+                        <p>Dencity makes it easy to explore options and identify associated costs with development</p>
+                    </div>
                 </div>
+
                 <div class="statistic">
-                    <h3>Statistic 2</h3>
-                    <p>Either database or general middle housing statistics</p>
+                    <img src="{{ url_for('static', filename='img/isometric-cloud-computing-and-virtualization-technology.gif') }}" alt="Statistic 1" style="width: 200px; height: 200px;">
+                    <h3>Algorithmic Integrity</h3>
+                    <p>Access Current Housing and Land Improvement Values. Dencity's transparent algorithm allows you to fine-tune its functionality to your needs</p>
                 </div>
+
                 <div class="statistic">
-                    <h3>Statistic 3</h3>
-                    <p>Either database or general middle housing statistics</p>
+                    <img src="{{ url_for('static', filename='img/isometric-laptop-with-web-design-application.gif') }}" alt="Statistic 1" style="width: 200px; height: 200px;">
+                    <h3>Intuitive Dashboard</h3>
+                    <p>Dencity is accessibiltiy driven, with features to simplify complicated Housing Ordinances and Zoning Requirements. Utilize Dencity to educate yourself about middle housing development near you.</p>
                 </div>
             </div>
         </div>
     </section>  
     <section class="infographic-section">
-        <img src="{{ url_for('static', filename='img/infographic.jpg') }}" alt="Middle Housing Infographic">
+        <div class="infographic-section">
+            <div class="centered-content">
+                <div class="text-button-wrapper">
+                    <div class="text-wrapper">
+                        <div class="text active">
+                            <h2>Project Plans Ready-to-Implement</h2>
+                            <p>Explore Dencity's pre-approved middle housing plans and get familiar with trending designs</p>
+                        </div>
+                    </div>
+                    <div class="button-wrapper">
+                        <button class="explore-button">Explore Plans</button>
+                    </div>
+                </div>
+            </div>            
+            <div class="centered-content">
+                <img src="{{ url_for('static', filename='img/infographic.jpg') }}" alt="Middle Housing Infographic">
+            </div>
+        </div>
     </section>
     <section class="video-demo">
         <div class="video-container">

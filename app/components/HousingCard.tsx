@@ -23,7 +23,7 @@ const HousingCard = ({plan}: {plan: any}) => {
                         <a className="link" href={plan.website}>{plan.website}</a>
                     </p>
                     <div className="card-actions justify-left">
-                        <button className='btn btn-primary'>View for more information</button>
+                        <ViewForMoreInfo />
                     </div>
                 </div>
             </div>

@@ -31,7 +31,7 @@
             attribution: '© OpenStreetMap'
         }).addTo(map);
 
-        var properties = {{ properties|tojson }};
+        var properties = properties|tojson;
         properties.forEach(function(property) {
             L.marker([property[1], property[2]]).addTo(map)
                 .bindPopup(property[3]);

@@ -13,6 +13,7 @@ function toggleContent(type) {
         landlordImage.classList.remove('active');
         tenantButton.classList.add('active');
         landlordButton.classList.remove('active');
+
     } else if (type === 'landlord') {
         tenantsText.classList.remove('active');
         landlordsText.classList.add('active');
@@ -21,4 +22,35 @@ function toggleContent(type) {
         tenantButton.classList.remove('active');
         landlordButton.classList.add('active');
     }
+
+    // Reset the sliding animation
+    const statistics = document.querySelectorAll('.statistic');
+    statistics.forEach(stat => {
+        stat.classList.remove('animate');
+        void stat.offsetWidth;
+        stat.classList.add('animate');
+    });
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    const statistics = document.querySelectorAll('.statistic');
+
+    //sliding animation for differing value propositions
+    const observerCallback = (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate');
+          observer.unobserve(entry.target);
+        }
+      });
+    };
+  
+    const observer = new IntersectionObserver(observerCallback, {
+      threshold: 0.1 
+    });
+  
+    statistics.forEach(stat => {
+      observer.observe(stat);
+    });
+
+  });

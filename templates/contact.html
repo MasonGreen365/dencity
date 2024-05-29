@@ -21,7 +21,7 @@
         <div class="contact-form">
             <h2>Contact Us</h2>
             <p>Have a question or need assistance? Please send us a message!</p>
-            <form>
+            <form id="contactForm">
                 <label for="name">Your Name</label>
                 <input type="text" id="name" name="name" required>
                 
@@ -44,6 +44,10 @@
                 <button type="submit">Send Message</button>
             </form>
         </div>
+        <div id="popupMessage" class="popup">
+            <span class="closePopup">&#x2716;</span>
+            <p id="popupText"></p>
+        </div>        
     </div>
     <footer class="footer">
         <div class="footer-content">
@@ -58,5 +62,6 @@
             <p>Legal Disclaimer: The information presented herein by Team Dencity is intended solely for informational purposes, serving as a preliminary guide and not constituting legal, financial, or professional advice.</p>
         </div>
     </footer>
+    <script src="{{ url_for('static', filename='js/contact.js') }}"></script>
 </body>
 </html>

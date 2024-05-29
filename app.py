@@ -40,5 +40,24 @@ def resources():
 def contact():
     return render_template('contact.html')
 
+# Route for Contact (POST request)
+@app.route('/contact', methods=['POST'])
+def contact_submit():
+    name = request.form['name']
+    email = request.form['email']
+    category = request.form['category']
+    subject = request.form['subject']
+    message = request.form['message']
+
+    conn = get_db_connection()
+    cur = conn.cursor()
+    cur.execute('INSERT INTO CONTACT (Name, Email, Category, Subject, Message) VALUES (%s, %s, %s, %s, %s)', 
+                (name, email, category, subject, message))
+    conn.commit()
+    cur.close()
+    conn.close()
+
+    return jsonify({'message': 'Thank you for your message. We will get back to you soon!'})
+
 if __name__ == '__main__':
     app.run(debug=True)

@@ -745,8 +745,31 @@ h3.image-caption {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
-
-
 .contact-form button:hover {
     background-color: #239270;
+}
+
+/* MOBILE DESIGN*/
+@media only screen and (max-width: 768px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+    }
+    .about-container {
+        max-width: 100%;
+    }
+    .value-card {
+        width: calc(45% - 2px);
+        margin: 20px;
+        padding: 10px;
+    }
+    .data-image img {
+        margin-left: 20px;
+    }
 }

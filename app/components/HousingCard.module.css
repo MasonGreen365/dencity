@@ -1,9 +1,0 @@
-/*always use camelCase notation when generating component specific
-sytles as they are treated as JSON objects inside components
-If not using Tailwind css, place styling here
-*/
-
-.card {
-    padding: 1rem;
-    border: 1px solid #ccc;
-}

@@ -30,11 +30,11 @@
             maxZoom: 19,
             attribution: '© OpenStreetMap'
         }).addTo(map);
-
-        var properties = properties|tojson;
+    
+        var properties = {{ properties|safe }};
         properties.forEach(function(property) {
-            L.marker([property[1], property[2]]).addTo(map)
-                .bindPopup(property[3]);
+            L.marker([property.propertylatitude, property.propertylongitude]).addTo(map)
+                .bindPopup(property.propertyaddress);
         });
     </script>
 </body>

@@ -23,13 +23,13 @@ function toggleContent(type) {
         landlordButton.classList.add('active');
     }
 
-    // Reset the sliding animation
-    const statistics = document.querySelectorAll('.statistic');
-    statistics.forEach(stat => {
-        stat.classList.remove('animate');
-        void stat.offsetWidth;
-        stat.classList.add('animate');
-    });
+    // // Reset the sliding animation
+    // const statistics = document.querySelectorAll('.statistic');
+    // statistics.forEach(stat => {
+    //     stat.classList.remove('animate');
+    //     void stat.offsetWidth;
+    //     stat.classList.add('animate');
+    // });
 }
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -52,5 +52,9 @@ document.addEventListener('DOMContentLoaded', function() {
     statistics.forEach(stat => {
       observer.observe(stat);
     });
+
+    document.querySelector('.explore-button').addEventListener('click', function() {
+      window.location.href = 'resources'; // Replace 'otherpage.html' with the path to your HTML file
+  });  
 
   });

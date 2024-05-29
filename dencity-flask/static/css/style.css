@@ -229,7 +229,18 @@ body {
       transform: translateX(0);
     }
   }
-  
+
+.external-link {
+    color: var(--rainforest);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.external-link:hover {
+    color: var(--moss);
+}
+
 .statistic {
     opacity: 0;
     perspective: 1000px; 
@@ -347,8 +358,10 @@ body {
     border: none;
     border-radius: 10px;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s;
-
+    transition: background-color 0.3s;
+}
+.explore-button:hover {
+    background-color: #239270;
 }
 /* PROPERTIES */
 .map-container {
@@ -404,6 +417,10 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
     width: calc(25% - 40px);
     box-sizing: border-box;
+    transition: transform 0.2s ease-in-out;
+}
+.team-member:hover {
+    transform: scale(1.025);
 }
 .team-member img {
     max-width: 80%;
@@ -489,16 +506,26 @@ h3.image-caption {
 
 .value-card {
     width: calc(30% - 20px);
-    margin-bottom: 20px;
-    padding: 0px;
+    margin: 30px;
+    padding: 10px;
     background-color: var(--white);
-    border-radius: 10px;
+    border-radius: 15px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     box-sizing: border-box;
     transition: transform 0.2s ease-in-out;
 }
+.value-card:hover {
+    transform: scale(1.025);
+}
 .value-card p {
     margin: 20px;
+}
+.grid-title {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 50px;
+    color: var(--rainforest);
 }
 .resource-grid {
     display: flex;
@@ -584,10 +611,10 @@ h3.image-caption {
 }
 .housing-card .front h3 {
     text-align: center;
+    font-size: 1.5rem;
     padding: 10px;
-    margin-bottom: 10px;
-    background-color: var(--moss);
-    color: var(--white);
+    margin: 0;
+    color: var(--rainforest);
 }
 .housing-card .front p {
     text-align: left;
@@ -657,6 +684,7 @@ h3.image-caption {
     height: auto;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    background-color: var(--white);
 }
 /* CONTACT */
 .contact-container {

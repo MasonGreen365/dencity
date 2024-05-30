@@ -575,6 +575,7 @@ h3.image-caption {
     background-color: var(--ivory);
     border-radius: 20px;
     margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 .housing-plans h2,
 .data-sources h2 {
@@ -674,7 +675,7 @@ h3.image-caption {
 }
 .data-text {
     flex: 1;
-    max-width: 45%;
+    max-width: 55%;
 }
 .data-image {
     flex: 1;
@@ -686,6 +687,11 @@ h3.image-caption {
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.2);
     background-color: var(--white);
+    transition: transform 0.2s ease-in-out, background-color 0.3s ease;
+}
+.data-image img:hover {
+    background-color: #edf6f7;
+    transform: scale(1.05);
 }
 /* CONTACT */
 .contact-container {

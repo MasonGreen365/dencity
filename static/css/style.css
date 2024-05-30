@@ -372,18 +372,11 @@ body {
 	border-radius:15px;
 	box-shadow:0 6px 12px rgba(0,0,0,0.2);
 	overflow:hidden;
-}
-.filters {
-	width:25%;
-	padding:20px;
-	background-color:var(--white);
-	overflow:auto;
-	height:500px;
+    border: 6px solid var(--white);
 }
 #map {
     flex: 1;
 	height:640px;
-	border-left:2px solid var(--white);
 }
 /* ABOUT */
 .team {

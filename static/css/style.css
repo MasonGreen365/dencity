@@ -690,7 +690,7 @@ h3.image-caption {
     transition: transform 0.2s ease-in-out, background-color 0.3s ease;
 }
 .data-image img:hover {
-    background-color: #edf6f7;
+    background-color: #fafefe;
     transform: scale(1.05);
 }
 /* CONTACT */

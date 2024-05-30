@@ -372,7 +372,6 @@ body {
 	border-radius:15px;
 	box-shadow:0 6px 12px rgba(0,0,0,0.2);
 	overflow:hidden;
-    border: 6px solid var(--white);
 }
 #map {
     flex: 1;

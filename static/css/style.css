@@ -105,12 +105,12 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-top: 50px;
-    padding: 100px 80px;
+    padding: 100px 60px;
     background-color: var(--ivory);
     margin-bottom: 20px;
 }
 .hero-text {
-    width: 45%;
+    width: 50%;
 }
 .hero-text h1 {
     font-size: 3.2rem;
@@ -129,6 +129,7 @@ body {
 .hero-images img {
     height: 480px;
     width: 700px;
+    margin-left: 40px;
     border-radius: 20px;
 }
 .scroll-down {

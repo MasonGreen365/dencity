@@ -149,7 +149,7 @@ body {
     }
 }
 .section-content {
-    padding:40px 80px;
+    padding:40px 100px;
     text-align: left;
     display: flex;
     justify-content: center;
@@ -165,11 +165,10 @@ body {
     box-sizing: border-box;
 }
 
-/* animation when toggled */
 .image-wrapper {
     position: relative;
     width: 200px; 
-    height: 300px;
+    height: 350px;
 }
 
 .image-wrapper img {
@@ -491,7 +490,6 @@ body {
 .value-card img {
     width: 100%;
     border-radius: 10px 10px 0px 0px;
-    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
     position: relative;
 }
 

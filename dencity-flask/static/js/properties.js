@@ -87,7 +87,7 @@ function cleanGeoJsonData(geoJson) {
   const propertiesToKeep = [
     "OBJECTID", "PIN", "ADDRESS", "PROP_NAME", "LAND_SQFT", 
     "LAND_USE_DESC", "ZONING", "SF_UNITS", "YR_BUILT", 
-    "REDEV_FL_AREA", "AVAIL_SQFT", "STATUS_TEXT_1", "STATUS_TEXT_2"
+    "REDEV_FL_AREA", "AVAIL_SQFT", "STATUS_TEXT_1", "STATUS_TEXT_2", "UV_NAME"
   ];
 
   // Construct feature layer

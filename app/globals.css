@@ -9,7 +9,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  padding: 1rem;
+  padding: .5rem;
 }
 
 @layer utilities {

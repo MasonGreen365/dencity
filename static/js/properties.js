@@ -2,7 +2,7 @@
 //search bar: https://github.com/Esri/esri-leaflet-geocoder
 
 // Fetch geoJSON data
-fetch('/static/Zoned_Development_Capacity_Layers_2016.js')
+fetch('/static/Cleaned_Parcel_Map.js')
   .then(response => response.text())
   .then(parcelsScript => {
     // Dynamically evaluate the script to initialize the parcels variable

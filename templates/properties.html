@@ -2,7 +2,6 @@
 <html>
 <head>
     <title>Dencity Map</title>
-    
     <!-- Load Leaflet from CDN-->
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
     <script src="https://unpkg.com/leaflet/dist/leaflet-src.js"></script>
@@ -35,7 +34,6 @@
     <div class="map-container">
         <div id="map"></div>
     </div>
-    <script src="{{ url_for('static', filename='js/properties.js') }}"></script>
 </body>
 <footer class="footer">
     <div class="footer-content">
@@ -50,4 +48,5 @@
         <p>Legal Disclaimer: The information presented herein by Team Dencity is intended solely for informational purposes, serving as a preliminary guide and not constituting legal, financial, or professional advice.</p>
     </div>
 </footer>
+<script src="{{ url_for('static', filename='js/properties.js') }}"></script>
 </html>

@@ -17,26 +17,27 @@ def landing():
 # Route for Properties
 @app.route('/properties')
 def properties():
-    conn = get_db_connection()
-    cur = conn.cursor()
-    cur.execute('SELECT propertyid, propertylatitude, propertylongitude, propertyaddress, propertyvaluation FROM PROPERTY;')
-    properties = cur.fetchall()
-    cur.close()
-    conn.close()
+    # conn = get_db_connection()
+    # cur = conn.cursor()
+    # cur.execute('SELECT propertyid, propertylatitude, propertylongitude, propertyaddress, propertyvaluation FROM PROPERTY;')
+    # properties = cur.fetchall()
+    # cur.close()
+    # conn.close()
     
-    # Convert properties data to a list of dictionaries
-    properties_list = []
-    for prop in properties:
-        prop_dict = {
-            'propertyid': prop[0],
-            'propertylatitude': float(prop[1]),
-            'propertylongitude': float(prop[2]),
-            'propertyaddress': prop[3],
-            'propertyvaluation': str(prop[4])
-        }
-        properties_list.append(prop_dict)
+    # # Convert properties data to a list of dictionaries
+    # properties_list = []
+    # for prop in properties:
+    #     prop_dict = {
+    #         'propertyid': prop[0],
+    #         'propertylatitude': float(prop[1]),
+    #         'propertylongitude': float(prop[2]),
+    #         'propertyaddress': prop[3],
+    #         'propertyvaluation': str(prop[4])
+    #     }
+    #     properties_list.append(prop_dict)
 
-    return render_template('properties.html', properties=json.dumps(properties_list))
+    # return render_template('properties.html', properties=json.dumps(properties_list))
+    return render_template('properties.html')
 
 
 # Route for About

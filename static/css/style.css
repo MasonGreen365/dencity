@@ -131,6 +131,18 @@ body {
     width: 700px;
     margin-left: 40px;
     border-radius: 20px;
+    animation: bounce-image 5s infinite;
+}
+@keyframes bounce-image {
+    0%, 50%, 100% { /* Adjusted keyframe percentages */
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-10px);
+    }
+    75% {
+        transform: translateY(-5px);
+    }
 }
 .scroll-down {
     font-size: 2.2rem;

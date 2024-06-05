@@ -131,7 +131,7 @@ body {
     width: 700px;
     margin-left: 40px;
     border-radius: 20px;
-    animation: bounce-image 5   s infinite;
+    animation: bounce-image 5s infinite;
 }
 @keyframes bounce-image {
     0%, 50%, 100% {

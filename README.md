@@ -1,4 +1,6 @@
-# dencity
+# Dencity
+
+**Instructions:** To run the application, execute `python app.py` in your terminal.
 
 *Names and Roles:*
 - **Mason Green** - Product Manager
